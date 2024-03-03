@@ -1,83 +1,83 @@
 (async () => {
-  await loadPolygonPath(tsParticles);
-  await loadTrailEffect(tsParticles);
-
-  await tsParticles.load({
-    options: {
-      particles: {
-        color: {
-          value: "#FF0000",
-          animation: {
-            enable: true,
-            speed: 10
-          }
-        },
-        effect: {
-          type: "trail",
-          options: {
-            trail: {
-              length: 50,
-              minWidth: 4
+    await loadPolygonPath(tsParticles);
+    await loadTrailEffect(tsParticles);
+  
+    await tsParticles.load({
+      options: {
+        particles: {
+          color: {
+            value: "#1ffafc",
+            animation: {
+              enable: true,
+              speed: 10
             }
-          }
-        },
-        move: {
-          direction: "none",
-          enable: true,
-          outModes: {
-            default: "destroy"
           },
-          path: {
-            clamp: false,
-            enable: true,
-            delay: {
-              value: 0
-            },
-            generator: "polygonPathGenerator",
+          effect: {
+            type: "trail",
             options: {
-              sides: 6,
-              turnSteps: 30,
-              angle: 30
+              trail: {
+                length: 50,
+                minWidth: 4
+              }
             }
           },
-          random: false,
-          speed: 3,
-          straight: false
+          move: {
+            direction: "none",
+            enable: true,
+            outModes: {
+              default: "destroy"
+            },
+            path: {
+              clamp: false,
+              enable: true,
+              delay: {
+                value: 0
+              },
+              generator: "polygonPathGenerator",
+              options: {
+                sides: 6,
+                turnSteps: 30,
+                angle: 30
+              }
+            },
+            random: false,
+            speed: 3,
+            straight: false
+          },
+          number: {
+            value: 0
+          },
+          opacity: {
+            value: 1
+          },
+          shape: {
+            type: "circle"
+          },
+          size: {
+            value: 2
+          }
         },
-        number: {
-          value: 0
+        background: {
+          color: "#000"
         },
-        opacity: {
-          value: 1
+        fullScreen: {
+          zIndex: -1
         },
-        shape: {
-          type: "circle"
-        },
-        size: {
-          value: 2
-        }
-      },
-      background: {
-        color: "#000"
-      },
-      fullScreen: {
-        zIndex: -1
-      },
-      emitters: {
-        direction: "none",
-        rate: {
-          quantity: 1,
-          delay: 0.25
-        },
-        size: {
-          width: 0,
-          height: 0
-        },
-        position: {
-          x: 50,
-          y: 50
+        emitters: {
+          direction: "none",
+          rate: {
+            quantity: 1,
+            delay: 0.25
+          },
+          size: {
+            width: 0,
+            height: 0
+          },
+          position: {
+            x: 50,
+            y: 50
+          }
         }
       }
-    }
-  });
-})();
+    });
+  })();
