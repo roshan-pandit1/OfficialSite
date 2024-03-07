@@ -156,7 +156,7 @@ header {
 }
 .portfolio{
     width: 300px;
-    height: 350px;              /**/
+    height: 350px;
     background-size: cover;
     border-radius: 15px;
     position: relative;
@@ -282,4 +282,54 @@ header {
   mix-blend-mode: difference;
   z-index: 999;
   pointer-events: none;
+}
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    width: 300px; 
+    height: 350px; 
+  }
+  .cards--one h1, .cards--one p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio {
+    width: 250px;
+    height: 300px; 
+  }
+  .cards--one h1, .cards--one p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    width: 45%; 
+    height: 250px; 
+  }
+  .cards--one h1, .cards--one p {
+    font-size: 14px;
+  }
+  .faculty-head {
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  .faculty-coordinator, .Heads-of-heads, .Heads-of-society, .members {
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  .portfolio {
+    margin-right: 0;
+    margin-bottom: 30px;
+  } 
+}
+
+.portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
 }
