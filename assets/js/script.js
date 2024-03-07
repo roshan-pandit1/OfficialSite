@@ -114,22 +114,17 @@ function closeAlert() {
 
   // cursor follower
 
-
-var xp = 0,
-  mouseX = 0;
-var yp = 0,
-  mouseY = 0;
-var xpDot = 0,
-  mouseX = 0;
-var ypDot = 0,
-  mouseY = 0;
+var xp = 0, mouseX = 0;
+var yp = 0, mouseY = 0;
+var xpDot = 0, mouseX = 0;
+var ypDot = 0, mouseY = 0;
 
 const cursorFollower = document.querySelector(".cursorFollower");
 const cursorFollowerDot = document.querySelector(".cursorFollowerDot");
 
 document.addEventListener("mousemove", (e) => {
-  mouseX = e.pageX;
-  mouseY = e.pageY;
+  mouseX = e.clientX; // Changed from e.pageX
+  mouseY = e.clientY; // Changed from e.pageY
 });
 
 setInterval(function () {

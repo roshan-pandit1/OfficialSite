@@ -12,9 +12,9 @@ const cursorFollower = document.querySelector(".cursorFollower");
 const cursorFollowerDot = document.querySelector(".cursorFollowerDot");
 
 document.addEventListener("mousemove", (e) => {
-  mouseX = e.pageX;
-  mouseY = e.pageY;
-});
+    mouseX = e.clientX; 
+    mouseY = e.clientY; 
+  });
 
 setInterval(function () {
   xp += (mouseX - xp) / 15;
