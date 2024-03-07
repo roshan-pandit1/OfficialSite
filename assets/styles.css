@@ -137,6 +137,8 @@ header {
   min-height: 100vh;
 }
 
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .logo img {
@@ -398,4 +400,77 @@ form .button-area {
     height: 50px;
     width: auto;
     z-index: 1001; 
+  }
+
+
+  /* about us section starts here  */
+
+  .about-us-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .about-us-section img {
+    width: 45%;
+    height: auto;
+  }
+
+  .about-us-words {
+    width: 50%;
+  }
+
+  .about-us-h1 {
+    font-size: 2.5em;
+  }
+
+  .about-us-p {
+    font-size: 1.5em;
+  }
+
+  .btn-grp {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+  }
+  .btn-grp a{
+    font-size: 1.8em;
+  }
+  @media screen and (max-width: 768px) {
+    body .about-us-section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    body .about-us-section img {
+      width: 100%;
+    }
+
+    body .about-us-words {
+      width: 100%;
+      text-align: center;
+    }
+
+    body .about-us-h1 {
+      font-size: 2.5em;
+    }
+
+    body .about-us-p {
+      font-size: 1.5em;
+    }
+  }
+  .about-us-words {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-grp {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-grp a i {
+    font-size: 2em;
   }
