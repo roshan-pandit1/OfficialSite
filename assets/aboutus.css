@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+/* style.css */
+
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+/* Center the content */
+.about-us-section{
+    display: flex;
+    max-width: max-content;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-us-words{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+/* Style the heading */
+.about-us-h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraphs */
+.about-us-p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* On hover, underline the email link */
+.btn-grp{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.btn-grp:hover{
+    border: none;
+}
+
+.icon-project-linkedin{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon-project-linkedin:hover{
+    color: #00aced;
+}
+.icon-project-github{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon-project-github:hover{
+    color: #8e32ac;
+}
+
+.icon-project-instagram{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon-project-instagram:hover{
+    color: #ee00da;
+}
+
+.icon-project-envelope{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon-project-envelope:hover{
+    color: #ff3030;
+}

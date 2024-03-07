@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: #050505ce;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  height: 100vh;
+  margin: 0;
+}
+
+*::selection {
+  background: #2b3dda;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb {
+  background: #420177;
+}
+
+/* navbar starts */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 10%;
+    height: 6.5rem;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  }
+  section {
+    min-height: 100vh;
+    padding: 2rem 9%;
+  }
+  .heading {
+    font-size: 3.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
+  }
+  .heading span {
+    color: rgb(115, 3, 167);
+  }
+  header .logo {
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #0e2431;
+  }
+  header .logo i {
+    font-size: 2.2rem;
+  }
+  header .logo:hover {
+    color: #fc8c05;
+  }
+  header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .navbar li {
+    margin-left: 2.5rem;
+  }
+  header .navbar ul li a {
+    font-size: 1.57rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    transition: 0.2s;
+  }
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    color: #ffffff !important;
+    border-bottom: 0.2rem solid #011aff !important;
+    padding: 0.5rem 0 !important;
+  }
+  .logo img {
+    height: 50px;
+    width: auto;
+    z-index: 1001; 
+  }
+  /* navbar ends */
+
+/* cards starts */
+.space{
+    margin: 65px;
+}
+.img-responsive {
+    width: 300px;
+    height: 425px;
+  }
+.cards-collection{    
+    font-family: "Do Hyeon", sans-serif;  
+    overflow: hidden;
+    margin-top: 95px;
+    height: max-content;
+    width: 100vw;
+    margin-left: 10px;
+}  
+.faculty-head{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.faculty-coordinator{
+    display: flex;
+    justify-content: center;
+}
+.Heads-of-heads{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.Heads-of-society{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.members{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.portfolio{
+    width: 300px;
+    height: 350px;              /**/
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    margin-right: 30px;
+}
+.cards--one h1{
+    position: absolute;
+    top: 72%;
+    left: -100%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 20px;
+    z-index: 8;
+    transition: all 0.6s ease;
+}
+.cards--one p{
+    position: absolute;
+    top: 78%;
+    left: -145%;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    z-index: 8;
+    transition: all 0.6s ease;
+}
+.hover-effect { 
+    width: 750px;
+    height: 200px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 175%;
+    left: -78%;
+    /* transform: rotate(30deg); */
+    z-index: 5;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+.hover-effect:before {  
+    content: "";
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    /* background: #f07306; */
+    background: #0f0803;
+    transform: translateY(200px);
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+.cards--one:hover h1 {
+    left: 8%; 
+}
+.cards--one:hover p {
+    left: 8%;
+}
+.cards--one:hover img {
+    transform: translateY(-15px);
+}
+.cards--one:hover .hover-effect {
+    /* increase height of white square of hover if required */
+    top: 65%;       
+}
+.cards--one:hover .hover-effect:before {
+    /* increase height of black square of hover if required */
+    transform: translateY(10px);
+}
+.cards--one:hover a {
+    transform: translateY(0);
+}
+.cards--one ul {
+    list-style: none;
+    position: absolute;
+    top: 90%;
+    /* bottom: 0; */
+    left: 25px;
+    z-index: 9;
+}
+.cards--one ul a {
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(100px);
+}
+.cards--one ul a:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.cards--one ul a:nth-child(3) {
+    transition-delay: 0.3s;
+}
+.cards--one ul a:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+
+/* Cursor follow button */
+
+.cursorFollower {
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s;
+  mix-blend-mode: difference;
+  z-index: 999;
+  pointer-events: none;
+}
+.cursorFollowerDot {
+  position: fixed;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s;
+  mix-blend-mode: difference;
+  z-index: 999;
+  pointer-events: none;
+}
