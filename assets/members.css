@@ -220,7 +220,7 @@ header {
 }
 .cards--one h1{
     position: absolute;
-    top: 72%;
+    top: 66%;
     left: -100%;
     text-transform: capitalize;
     color: #ffffff;
@@ -230,7 +230,7 @@ header {
 }
 .cards--one p{
     position: absolute;
-    top: 78%;
+    top: 73%;
     left: -145%;
     text-transform: capitalize;
     color: #fff;
@@ -275,26 +275,26 @@ header {
 }
 .cards--one:hover .hover-effect {
     /* increase height of white square of hover if required */
-    top: 65%;       
+    top: 60%;       
 }
 .cards--one:hover .hover-effect:before {
     /* increase height of black square of hover if required */
     transform: translateY(10px);
 }
 .cards--one:hover a {
-    transform: translateY(0);
+    transform: translateY(-10px);
 }
 .cards--one ul {
     list-style: none;
     position: absolute;
-    top: 90%;
+    top: 88%;
     /* bottom: 0; */
     left: 25px;
     z-index: 9;
 }
 .cards--one ul a {
     display: inline-block;
-    font-size: 16px;
+    font-size: 23px;
     margin: 7px;
     color: #fff;
     transition: all 0.2s ease-in-out;
@@ -306,9 +306,9 @@ header {
 .cards--one ul a:nth-child(3) {
     transition-delay: 0.3s;
 }
-.cards--one ul a:nth-child(4) {
+/* .cards--one ul a:nth-child(4) {
     transition-delay: 0.4s;
-}
+} */
 
 
 /* Cursor follow button */
