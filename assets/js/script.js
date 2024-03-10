@@ -1,27 +1,33 @@
 window.onload = function() {
-    var title = document.getElementById("title");
-    var text = "Entrepreneurship";
-    var i = 0;
+  var title = document.getElementById("title");
+  var text = "Entrepreneurship";
+  var i = 0;
+  var isDeleting = false;
 
-    function typeWriter() {
-        if (i < text.length) {
-            title.innerHTML = text.substring(0, i+1) + "-Cell";
-            i++;
-            setTimeout(typeWriter, 150); // writing speed
-        } else {
-            // Reset after completion
-            setTimeout(() => {
-                title.innerHTML = "E-Cell";
-                i = 0;
-                setTimeout(typeWriter, 1000); // Adjust delay before repeating 
-            }, 2000); // Adjust delay before collapsing 
-        }
+  function typeWriter() {
+    if (!isDeleting && i < text.length) {
+      title.innerHTML = text.substring(0, i+1) + "-Cell";
+      i++;
+      setTimeout(typeWriter, 150); // writing speed
+    } else if (isDeleting && i > 1) {
+      title.innerHTML = text.substring(0, i) + "-Cell";
+      i--;
+      setTimeout(typeWriter, 150); // deleting speed
+    } else if (i >= text.length) {
+      // Start deleting after completion
+      isDeleting = true;
+      setTimeout(typeWriter, 1000); // Adjust delay before deleting 
+    } else if (i <= 1) {
+      // Reset after all text is deleted
+      isDeleting = false;
+      title.innerHTML = "E-Cell";
+      setTimeout(typeWriter, 1000); // Adjust delay before repeating 
     }
+  }
 
-    title.innerHTML = "E-Cell";
-    typeWriter();
+  title.innerHTML = "E-Cell";
+  typeWriter();
 };
-
 //navbar responsive starts
 $(document).ready(function() {
     $('#menu').click(function () {
