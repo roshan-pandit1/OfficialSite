@@ -458,6 +458,12 @@ form .button-area {
     z-index: 1001; 
   }
 
+  @media (max-width: 768px) {
+    .cursorFollower, .cursorFollowerDot {
+      display: none;
+    }
+  }
+
 
   /* about us section starts here  */
 
