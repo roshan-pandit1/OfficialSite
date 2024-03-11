@@ -172,6 +172,13 @@ header {
 .space{
     margin: 65px;
 }
+.space1{
+  margin : 40px;    /**/
+}
+.heading{
+  font-family: "Poppins", sans-serif; 
+  font-size: 55px; 
+}
 .img-responsive {
     width: 300px;
     height: 425px;
@@ -182,7 +189,7 @@ header {
     margin-top: 95px;
     height: max-content;
     width: 100vw;
-    margin-left: 10px;
+    /* margin-left: 10px;     */
 }  
 .faculty-head{
     display: flex;
@@ -216,7 +223,8 @@ header {
     position: relative;
     overflow: hidden;
     background-position: center;
-    margin-right: 30px;
+    margin-right: 10px;   /**/
+    margin-left: 10px;    /**/
 }
 .cards--one h1{
     position: absolute;
@@ -376,7 +384,7 @@ header {
     justify-content: space-between; 
   }
   .portfolio {
-    margin-right: 0;
+    /* margin-right: 0; */
     margin-bottom: 30px;
   } 
 }
