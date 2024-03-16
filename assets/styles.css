@@ -536,3 +536,13 @@ form .button-area {
   .btn-grp a i {
     font-size: 2em;
   }
+
+
+
+.heading-events{
+  background-color: #000;
+}
+.heading-events h1{
+ font-family: 'Playfair Display', serif;
+ font-size: 55px;
+}

@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="./assets/aboutus.css">
     <link rel="stylesheet" href="./assets/contactus.css">
+    <link rel="stylesheet" href="assets/events.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>E-Cell VSET</title>
-    <link rel="icon" href="/imgs/logo.jpeg">
+    <link rel="icon" href="./imgs/logo.jpeg">
 </head>
 <body>
 <!-- navbar starts -->
 <header>
         <a href="/" class="logo">
-          <img src="/imgs/logo.jpeg" alt="Logo">
+          <img src="./imgs/logo.jpeg" alt="Logo">
         </a>
         <div id="menu" class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
             <li><a class="active" href="#ecell">Home</a></li>
-            <li><a href="#About">About</a></li>
             <li><a href="#events">Events</a></li>
+            <li><a href="#About">About</a></li>
             <li><a href="#announcements">Announcements</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="#contactus">Contact Us</a></li>
@@ -38,6 +39,76 @@
     <h1 id="title">E-Cell</h1>
   </div>
 </section>
+
+
+<!-- event section starts -->
+
+<div class="heading-events">
+  <h1 class="heading-of-event">Events</h1>
+</div>
+
+<div class="carousel" id="events">
+  <div class="carousel__nav">
+    <span id="moveLeft" class="carousel__arrow">
+      <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+      </svg>
+    </span>
+    <span id="moveRight" class="carousel__arrow" >
+      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+      </svg>    
+    </span>
+  </div>
+  <div class="carousel-item carousel-item--1">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+        <!-- <h2 class="carousel-item__subtitle">The grand moment </h2> -->
+        <h1 class="carousel-item__title">Innovation Mela</h1>
+        <p class="carousel-item__description">Had a wonderful experience with the CIENA SPACES an initiative by the NASSCOM FOUNDATION .Join us in congratulating this talented entrepreneur and stay tuned for more updates on their innovative solutions for mental wellness!💯💯</p>
+        <h2 class="carousel-item__date">14th March 2023</h2>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item carousel-item--2">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+        <!-- <h2 class="carousel-item__subtitle">The big window </h2> -->
+        <h1 class="carousel-item__title">PITCH.itUP @VIPS</h1>
+        <p class="carousel-item__description">We at E&D Cell, value your creative ideas and hence, are welcoming you and your idea to be presented infront of our esteemed judge panel and gain expert advices.</p>
+        <a href="#" class="carousel-item__date">27th April 2023</a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item carousel-item--3">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+        <!-- <h2 class="carousel-item__subtitle">Peer to Peer Learning </h2> -->
+        <h1 class="carousel-item__title">IGNITE SIG</h1>
+        <p class="carousel-item__description">Unveiling the Magic of SIGs: Ever wondered what SIGs are all about? SIGs, or Students Interest Groups, are like portals to a world where passion meets purpose. Organized by the E-Cell of VIPS-TC.</p>
+        <a href="#" class="carousel-item__date">20th February 2024</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="carousel-item carousel-item--4">
+    <div class="carousel-item__image"></div>
+    <div class="carousel-item__info">
+      <div class="carousel-item__container">
+        <!-- <h2 class="carousel-item__subtitle">We value your Idea </h2> -->
+        <h1 class="carousel-item__title">IDEATHON</h1>
+        <p class="carousel-item__description">🕵️‍♂️ Dive into the mystery of innovation at IDEATHON by Ciena Spaces, NASSCOM Foundation, and ECELL! 🚀</p>
+        <a href="#" class="carousel-item__date">6th March 2024</a>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- event section ends -->
 
 <!-- about us section starts -->
 <div class="About-us" id="About">
@@ -59,8 +130,9 @@
 </div>
 <!-- about us section ends -->
 
+
+<!-- Contact Us section starts -->
 <section id="contactus" class = "black-bg">
-  <!-- Contact Us section starts -->
   <!-- Contact form -->
   <div class="contact">
     <div class="container">
@@ -104,8 +176,10 @@
       </div>
     </div>
   </div>
-  <!-- Contact Us section ends here -->
 </section>
+<!-- Contact Us section ends here -->
+
+
 <!-- Cursor follow button code -->
 <span id="cursorFollower" class="cursorFollower"></span>
 <span id="cursorFollowerDot" class="cursorFollowerDot">
@@ -120,6 +194,7 @@
 
 <script src="particle.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="./assets/js/eventsection.js"></script>
 
 <!-- Email js -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> 
