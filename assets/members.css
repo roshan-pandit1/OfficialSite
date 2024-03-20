@@ -192,28 +192,34 @@ header {
     /* margin-left: 10px;     */
 }  
 .faculty-head{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 350px;  /* Adjust column size as needed */
+  justify-content: center;
+  overflow: hidden;
 }
 .faculty-coordinator{
-    display: flex;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 350px 350px;  /* Adjust column size as needed */
+  justify-content: center;
+  overflow: hidden;
 }
 .Heads-of-heads{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;  /* Adjust column size as needed */
+  justify-content: center;
+  overflow: hidden;
 }
 .Heads-of-society{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;  /* Adjust column size as needed */
+  justify-content: center;
+  row-gap: 20px;
 }
 .members{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;  /* Adjust column size as needed */
+  justify-content: center;
+  row-gap: 20px;
 }
 .portfolio{
     width: 300px;
@@ -374,11 +380,13 @@ header {
     font-size: 14px;
   }
   .faculty-head {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: center; 
   }
   .faculty-coordinator, .Heads-of-heads, .Heads-of-society, .members {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-between; 

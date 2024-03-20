@@ -546,3 +546,11 @@ form .button-area {
  font-family: 'Playfair Display', serif;
  font-size: 55px;
 }
+
+.heading-collaboration{
+  background-color: #000;
+}
+.heading-collaboration h1{
+ font-family: 'Playfair Display', serif;
+ font-size: 55px;
+}
