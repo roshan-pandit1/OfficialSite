@@ -351,6 +351,13 @@ header {
   z-index: 999;
   pointer-events: none;
 }
+
+  @media (max-width: 768px) {
+    .cursorFollower, .cursorFollowerDot {
+      display: none;
+    }
+  }
+
 @media screen and (max-width: 1200px) {
   .portfolio {
     width: 300px; 
