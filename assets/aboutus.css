@@ -11,7 +11,7 @@ body, h1, p {
     display: flex;
     max-width: max-content;
     flex-direction: row;
-    margin: 15px auto;
+    margin:auto;
     padding: 20px;
     background-color: #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

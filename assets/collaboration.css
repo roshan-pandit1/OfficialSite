@@ -26,6 +26,7 @@
     gap: 1rem;
 }
 
+/* 
 .scroller[data-animated="true"] {
     overflow: hidden;
     -webkit-mask: linear-gradient(
@@ -36,8 +37,7 @@
       transparent
     );
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-  
+}*/
 .scroller[data-animated="true"] .scroller__inner {
     width: -webkit-max-content;
     width: -moz-max-content;
