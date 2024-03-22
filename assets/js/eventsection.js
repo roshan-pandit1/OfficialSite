@@ -5,7 +5,7 @@ $(function(){
   var interval;
 
   function startCarousel() {
-      interval = setInterval(moveNext, 5000000); // Change slide every 5 seconds
+      interval = setInterval(moveNext, 5000); // Change slide every 5 seconds
   }
 
   function moveNext() {
