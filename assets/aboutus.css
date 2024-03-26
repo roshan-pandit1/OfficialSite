@@ -24,14 +24,16 @@ body, h1, p {
 /* Style the heading */
 .about-us-h1 {
     color: #ffffff;
-    font-size: 24px;
+    font-family: Montserrat ;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 /* Style the paragraphs */
 .about-us-p {
     color: #ffffff;
-    font-size: 16px;
+    font-family: Montserrat;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
