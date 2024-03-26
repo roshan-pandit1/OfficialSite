@@ -4,10 +4,11 @@
 } */
 .scroller{
         overflow: hidden;
-        padding: 60px 0;
-        background-color: white;
+        padding: 30px 0;
+        background-color: black;
         white-space: nowrap;
         position: relative;
+        mask: linear-gradient(90deg,#0000,#000 5% 95%,#0000);
 }
       
 .scroller:before,
@@ -75,4 +76,8 @@
     to {
       transform: translate(calc(-50% - 0.5rem));
     }
+}
+
+.scroller-img{
+  border-radius: 8px;
 }

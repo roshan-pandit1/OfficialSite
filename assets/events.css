@@ -69,7 +69,7 @@
 
 .carousel-item__title {
   margin: 15px 0 0 0;
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
   font-size: 44px;
   line-height: 45px;
   letter-spacing: 3px;
@@ -127,10 +127,13 @@
 
 .carousel__nav {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  left: 45%;
   z-index: 2;
   background-color: #ffffff;
   bottom: 0;
-  margin-left: 37%;
 }
 
 .carousel__icon {
@@ -208,6 +211,10 @@ transform: translateX(0);
     .carousel-item__title {
       font-size: 30px;
       line-height: 35px;
+    }
+
+    .carousel__nav{
+      left: 40%;
     }
   }
 
