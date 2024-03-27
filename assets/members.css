@@ -177,7 +177,7 @@ header {
 
 /* cards starts */
 .space{
-    margin: 65px;
+    margin: 30px;
 }
 .space1{
   margin : 40px;    /**/
@@ -434,3 +434,4 @@ header {
   object-fit: cover;
   object-position: center; 
 }
+
