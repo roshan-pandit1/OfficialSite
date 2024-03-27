@@ -6,7 +6,7 @@
       options: {
         particles: {
           color: {
-            value: "#1ffafc",
+            value: "#D8D8D6",
             animation: {
               enable: true,
               speed: 10
