@@ -152,49 +152,46 @@
 
 
 <!-- Contact Us section starts -->
-<section id="contactus" class = "black-bg">
-  <!-- Contact form -->
+<section id="contactus" class="black-bg">
   <div class="contact">
-    <div class="container">
-      <div class="heading-container">
-        <h1 class="heading"><i class="fas fa-envelope"></i> Contact <span>Us</span></h1>
-      </div>
-      <div class="content">
-        <form id="contactForm">       
-          <div class="form-group">
-            <div class="field">
-              <i class="fas fa-user"></i>
-              <span><input type="text" id="name" name="name" placeholder="Name" required></span>
-            </div>   
-            <span id="nameError" class="error"></span> 
-            <div class="field">
-              <i class="fas fa-envelope"></i>
-              <span><input type="email" id="email" name="email" placeholder="Email" required></span>
-            </div>
-            <span id="emailError" class="error"></span>
-          </div>
-          <div class="form-group">
-            <div class="field">
-              <i class="fas fa-book"></i>
-              <span><input type="text" id="topic" name="topic" placeholder="Subject" required></span>
-            </div>
-            <span id="topicError" class="error"></span>
-          </div>
-          <div class="message">
-            <i class="fas fa-pencil-alt"></i>
-            <span><textarea cols="30" rows="10" id="message" name="message" placeholder="Message.." required></textarea></span>
-            <span id="messageError" class="error"></span>
-          </div>
-          <div class="button-area">                            
-            <button type="button" onclick="sendMail();"><i class="fas fa-paper-plane"></i> Send message</button>                            
-          </div>                      
-        </form>
-        <div id="alert" class="alert hidden">
-          <p>Message successfully sent!</p>
-          <button onclick="closeAlert()">OK</button>
+    <h1 class="heading"><i class="fas fa-envelope"></i> Contact Us</h1>
+    <form id="contactForm" class="form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <div class="input-wrapper">
+          <i class="fas fa-user icon"></i>
+          <input class="input" type="text" required="" placeholder="Enter your name..." id="name">
+          <div class="fancy-bg"></div>
         </div>
       </div>
-    </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <div class="input-wrapper">
+          <i class="fas fa-envelope icon"></i>
+          <input class="input" type="email" required="" placeholder="Enter your email..." id="email">
+          <div class="fancy-bg"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <div class="input-wrapper">
+          <i class="fas fa-heading icon"></i>
+          <input class="input" type="text" required="" placeholder="Enter the subject..." id="subject">
+          <div class="fancy-bg"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <div class="input-wrapper">
+          <i class="fas fa-comment icon"></i>
+          <textarea class="input" required="" placeholder="Enter your message..." id="message"></textarea>
+          <div class="fancy-bg"></div>
+        </div>
+      </div>
+      <div class="button-area">
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </div>
+    </form>
   </div>
 </section>
 <!-- Contact Us section ends here -->
