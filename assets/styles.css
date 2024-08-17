@@ -224,10 +224,10 @@ header {
   }
 }
 /* contact section starts */
-.contact {
+/* .contact {
   background: linear-gradient(to right, #003366, #005599);
   min-height: auto;
-  margin-top: 50px; /* adjust this value as needed */
+  margin-top: 50px; 
   background: linear-gradient(to right, #003366, #005599);
   min-height: auto;
 }
@@ -370,7 +370,6 @@ form .button-area {
   padding-left: 0;
   padding-right: 0;
 }
-/* contact section media queries starts */
 @media (max-width: 900px) {
   .contact {
     min-height: 70vh;
@@ -388,8 +387,8 @@ form .button-area {
     width: 100%;
     margin-right: 2rem;
   }
-}
-/* contact section media queries ends */
+} */
+
 
 
 
