@@ -1,0 +1,300 @@
+body {
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(235, 202, 245);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #420177;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 5%;
+    height: 4rem;
+    background-color: #000;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+    height: 2.5rem;
+    width: auto;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    transition: 0.2s;
+    padding: 0.5rem 0;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: #ffffff;
+    border-bottom: 0.2rem solid #011aff;
+}
+
+/* Add this for the current page highlight */
+header .navbar ul li a.current {
+    color: #ffffff;
+    border-bottom: 0.2rem solid #011aff;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 2%;
+    }
+
+    header .navbar ul li {
+        margin: 0 0.5rem;
+    }
+
+    header .navbar ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        /* flex-direction: column; */
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    header .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    header .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .navbar ul li {
+        margin: 0.25rem 0.5rem;
+    }
+
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-image {
+        display: none;
+    }
+
+    .event-title {
+        font-size: 24px;
+    }
+
+    .event-description {
+        font-size: 16px;
+    }
+
+    .event-date {
+        font-size: 16px;
+    }
+}
+.container {
+    position: relative;
+    top: 50px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading-events {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading-of-event {
+    font-size: 36px;
+    display: inline-block;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+}
+
+.heading-of-event::after {
+    content: '';
+    position: absolute;
+    left: -38px;
+    bottom: -21px;
+    /* Adjust this value as needed to position the squiggle correctly */
+    width: 200%;
+    height: 20px;
+    /* Adjust the height as needed */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1576 141" fill="%23420177"><path d="M153.58 20.56c54.61 7.77 11.57 2.06 114.89 15.59 13.33 1.74 90.26 10.48 91.36 10.58 134.57 12.96 190.69 18.5 388.54 25.15 129.22 1.29 93.08 1.1 154.55.57 81.39-.71 59.62-.04 125.55-4.57 63.95-4.4 45.79-3.03 63.95-4.82 122.74-12.1 74.45-6.7 196.81-22.16.11-.01 87.68-12.88 144.71-23.82l59.43-11.39c1.85-.35 3.34 1.62 4.26 2.89 5.62 7.81 7.57 23.36 5.18 27.51 24.07-1.73 36.84-3.04 53.78-2.26 2.94.14 5.88.72 8.79 1.14 7.63 2.7 13.25 29.31 8.37 33.57a11.5 11.5 0 0 1-6.34 3.04 61.01 61.01 0 0 1-21.5 10.23c-4.78 1.12-7.26 1.09-26.8 2.32-26.15 1.64-20.08 2.59-70.36 10.41-124.17 19.35-260.96 36.26-386.48 42.12-203.77 9.49-418.63-.99-621.76-19.77C188.84 102.05 36.15 75.18 30.07 74.7a10.51 10.51 0 0 1-4.75-1.64c-1.91-1.23-3.06-3.52-4.14-5.42-5.56-9.8-6.47-22.79-4.73-27.16-2.45-1.29-4.88-2.65-7.33-3.91C4.2 34.06-2.72 12.7 1.11 4.47c.85-1.32 1.61-2.4 2.71-3.52C4.57.19 5.83 0 6.95 0c7.42 0 128.62 17.94 146.63 20.56Z"></path></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* .wavy-line {
+    --s: 44px; 
+    --b: 16px; 
+    --m: 0.4;
+    
+    background: #D7AFF8;
+    --R: calc(var(--s) * sqrt(var(--m) * var(--m) + 1) + var(--b) / 2);
+    height: calc(2 * var(--R));
+    width: 100%;
+    --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+    mask:
+      radial-gradient(var(--R) at left 50% bottom calc(-1 * var(--m) * var(--s)), var(--_g)) 
+      calc(50% - 2 * var(--s)) calc(50% - var(--s) / 2 - var(--b) / 2) / calc(4 * var(--s)) calc(var(--s) + var(--b)) repeat-x,
+      radial-gradient(var(--R) at left 50% top calc(-1 * var(--m) * var(--s)), var(--_g)) 
+      50% calc(50% + var(--s) / 2 + var(--b) / 2) / calc(4 * var(--s)) calc(var(--s) + var(--b)) repeat-x;
+  } */
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(65, 9, 110, 0.5);
+}
+
+.event-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.event-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.event-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #bbbbbb;
+}
+
+.event-date {
+    font-size: 20px;
+    color: #D7AFF8;
+}
+
+.event-image {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+
+/* Add this to your existing CSS */
+
+#menu {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffffff;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: 4rem;
+        right: -100%;
+        width: 70%;
+        height: calc(100vh - 4rem);
+        background-color: #111111;
+        transition: 0.3s;
+        overflow-y: auto;
+        padding: 20px;
+    }
+
+    header .navbar.active {
+        right: 0;
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    header .navbar li {
+        margin: 10px 0;
+    }
+
+    header .navbar ul li a {
+        font-size: 1.2rem;
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 0.6s ease-out forwards;
+  }
